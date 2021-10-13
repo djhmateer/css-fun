@@ -1,0 +1,15 @@
+/* TEAM */
+Your title: Dave Mateer
+Site: davemateer@gmail.com 
+Twitter: @dave_mateer 
+Location: Kingston near Lewes, East Sussex, England 
+
+							
+/* THANKS */
+Name: https//hmsoftware.co.uk 
+						
+/* SITE */
+Last update: 2021/10/12
+Standards: HTML5, CSS3
+Components: CSS, Bootstrap
+Software: A starting place for CSS for developers
