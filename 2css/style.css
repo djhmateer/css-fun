@@ -1,0 +1,38 @@
+/* CSS Selector by element */
+ h1 {
+    color: red;
+    font-size: 20px;
+}
+
+/* p {
+    color: green;
+} */
+
+/* div {
+    margin: 10px;
+} */
+
+/* CSS Selector by class */
+.container {  
+    margin: 10px;  
+}
+
+/* CSS Selector by ID */
+#para1 {  
+    color: green;  
+    font-size: 26px;  
+}
+
+
+/* classes */
+.container1 {  
+    width: 500px;  
+    height: 100px;  
+    background-color: lightcyan;  
+    text-align: center;  
+}
+
+.heading1 {  
+    font-family: 'Courier New';  
+    color: tomato;  
+}
