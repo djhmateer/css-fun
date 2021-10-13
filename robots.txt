@@ -1,5 +1,7 @@
-# Allow all 
+# www.robotstxt.org/
+
+# Allow crawling of all content
 User-agent: *
-Allow: /
+Disallow:
 
 #Sitemap: https://osr4rightstools.org/sitemap.xml
