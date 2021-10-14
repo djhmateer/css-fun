@@ -1,0 +1,26 @@
+/* ids will beat classes, and are the highest specificity */
+/* only an inline style can override */
+#bar {
+    background-color: tomato;
+}
+
+
+/* a more specific class will alwyas beat less */
+html .foo {
+    background-color: seagreen;
+}
+
+/* a class will always beat element selectors */
+.foo {
+    background-color: red;
+}
+
+/* this is more specific, so wins */
+html body {
+    background-color: aqua;
+}
+
+/* furtherst one down, most specific against another body only, wins */
+body {
+    background-color: goldenrod;
+}

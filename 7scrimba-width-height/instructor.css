@@ -1,0 +1,41 @@
+/* html, body { */
+
+html {
+    /* there is a small default margin on the page */
+    margin: 0;
+    /*can't see any difference*/
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    background-color: #3D85C6;
+    color: rgba(0, 0, 0, .8);
+    padding: 20px;
+}
+
+#inline, #block {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+
+/* only the direct children of inline id */
+
+#inline>* {
+    background-color: white;
+    margin: 10px 0px 10px 10px;
+    padding: 5px;
+}
+
+
+/* only the direct children of inline id 
+otherwise nested divs or anything would get this styling */
+
+#block>* {
+    box-sizing: border-box;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+}

@@ -1,0 +1,13 @@
+/* the star is selecting all elements in inline */
+#inline * {
+    display: inline-block;
+    /* width and height can only be applied to elements that are not inline ie block */
+    /* inline only takes up as much width as necessary for the content inside */
+    width: 200px;
+    height: 100px;
+}
+
+#block * {
+    width: 200px;
+    height: 200px;
+}

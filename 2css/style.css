@@ -1,4 +1,4 @@
-/* CSS Selector by element */
+/* CSS Selector by Element */
  h1 {
     color: red;
     font-size: 20px;
@@ -12,7 +12,7 @@
     margin: 10px;
 } */
 
-/* CSS Selector by class */
+/* CSS Selector by Class */
 .container {  
     margin: 10px;  
 }

@@ -1,0 +1,17 @@
+/* box class */
+.box {
+    /* a declartion block */
+
+    /* a box border of 2px which is solid */
+    border: 2px solid;
+    background-color: white;
+}
+
+/* nice way to override on a single element in a page with an ID */
+#foo {
+    color: slateblue;
+}
+
+#bar {
+    color: tomato;
+}
