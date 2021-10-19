@@ -1,0 +1,36 @@
+.box {
+  background-color: lightgray;
+  width: 100px;
+  height: 100px;
+  /* essentially a background colour of gray with extra padding to make larger */
+  /* padding: 10px; */
+  /* padding: 10em; */
+  /* padding: 10%; */
+
+  /* 25 top and bottom, 10 left and right */
+  /* padding: 25px 10px; */
+  
+  /* top, right, bottom, left */
+  /* like a clock */
+  /* padding: 25px 10px 50px 0; */
+
+  padding: 10px;
+  /* makes the padding be included in the box ie will shrink rather than expand */
+  /* box-sizing:border-box; */
+
+  /* shorthand border */
+  /* border-style: solid;
+  border-color: lightgreen;
+  border-width: 10px; */
+
+  border:10px solid lightgreen
+
+}
+
+.content {
+  background-color: white;
+  /* this is the span putting a padding around */
+  padding: 10px;
+  /* without this it will come out of the surrounding box */
+  box-sizing:border-box;
+}

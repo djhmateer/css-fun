@@ -1,0 +1,30 @@
+.parent {
+  /* have to set the backgroup colour of the parent */
+  /* so can see the margin of the box */
+  background-color: rgba(0,0,0,.3);
+}
+
+.box {
+  background-color: lightgray;
+  width: 100px;
+  height: 100px;
+
+  /* padding is a shorthand too */
+  padding: 10px;
+
+  /* the margin does not alter the width of size of the element */
+  margin:20px;
+  /* margin is a shorthand */
+  /* margin-top: 10px; */
+
+  /* box-sizing:border-box; */
+  border:10px solid lightgreen
+}
+
+.content {
+  background-color: white;
+  /* this is the span putting a padding around */
+  padding: 10px;
+  /* without this it will come out of the surrounding box */
+  box-sizing:border-box;
+}

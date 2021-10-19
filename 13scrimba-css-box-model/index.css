@@ -1,0 +1,17 @@
+.box {
+  width: 100px;
+  height: 100px;
+  /* all these below affect the space an element takes up */
+
+  /* when we add padding it increases the size of the element - 120px now */
+  padding: 10px;
+
+  /* element grown again - 140px now */
+  border: 10px solid lightgreen;
+
+  /* the margin is spaced on the outside of the element, so wont make it bigger */
+  /* used to create spaces between sibling elements so they don't touch each other */
+
+  margin: 10px;
+  /* box-sizing: border-box; */
+}

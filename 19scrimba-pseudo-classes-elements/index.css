@@ -1,0 +1,30 @@
+
+/* pseudo class has 1 colon */
+/* ul li:first-child a {
+  color: tomato;
+}
+
+ul li:nth-child(even) a {
+  color: tomato;
+} */
+
+
+ul li a:hover {
+  color: tomato;
+}
+
+/* pseudo element has 2 colons */
+ul a::before {
+  content: "-> ";
+}
+
+
+
+/* 
+    Pseudo Elements
+    https://www.w3schools.com/css/css_pseudo_elements.asp
+    
+    Psudo Classes
+    https://www.w3schools.com/css/css_pseudo_classes.asp
+ */
+

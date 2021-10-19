@@ -1,8 +1,29 @@
 .box {
+  /* predefined colour name */
+  background-color: black;
+  /* hex colour 
+    000 being the least colour intensity ie black
+   FFF being the most colour intense ie white
+
+   RGB ie 
+   F00 is red
+   0F0 is green
+   00F is blue
+   */
+
+  background-color: #fff;
+
+  /* 2 digits for every colour for more precision */
+  background-color: #0000ff;
+
+  /* rgb */
+  background-color: rgb(255, 0, 0);
+
+  /* rgb alpha */
+  /* tranparency / opacity - 1 being fully opaque */
+  /* 0.5 is 50% opqque */
+  background-color: rgba(0, 0, 0, 0.5);
 }
-
-
-
 
 /*  COLOR NAMES LIST: 
     https://www.w3schools.com/cssref/css_colors.asp 

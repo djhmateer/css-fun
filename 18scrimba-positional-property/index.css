@@ -1,0 +1,35 @@
+body {
+  padding-bottom: 100px;
+}
+
+.first {
+  /* can move the position relative to it's original postiion in the element flow  */
+  position: relative;
+  /* once we're moved away from position static (default) we can use top right bottom left as below */
+  top: -40px;
+  margin-bottom: -40px;
+}
+
+.second {
+  position: relative;
+}
+
+.ribbon {
+  /* can move position relative to box's containing block ie first ancester that is not static. ie could be relative. ie not in the natural flow*/
+  /* in this case everything is static, so positionaing to root element */
+  position:absolute;
+  top: 0px;
+  right: 20px;
+}
+
+.toplink {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+

@@ -1,0 +1,14 @@
+.box {
+  margin: 20px;
+}
+
+.hidden {
+  /* almost like never existed */
+  /* display: none; */
+
+  /* stays in flow of the document */
+  visibility: hidden;
+
+  /* different effects */
+  /* opacity: 0; */
+}
