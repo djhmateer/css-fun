@@ -1,28 +1,32 @@
 body {
-	/* quite dark */
-	background-color: #333;
-
-	/* almost white */
-	color: #f4f4f4;
+	/* most websites do this - column to the edge an dno default margin */
+	margin:0;
 }
 
-a {
-	color: darksalmon;
+header {
+	background-color: #4a4a4a;
+	color: blanchedalmond;
+	text-align: center;
+	padding: 25px 0;
+	margin-bottom: 25px;
 }
 
-/* h1 {
-	font-size: 60px;
-	color: darkkhaki;
-} */
+main {
+	background-color: #e4e4e4;
+	width: 600px;
+	padding: 25px;
+	border: solid 5px red;
+	/* how to center an element */
 
-.intro {
-	font-size: 24px;
+	/* centre left to right so write 0 auto to centre something */
+	/* suggest this and not just auto */
+	margin: 0 auto
 }
 
-.earth-title {
-	color: lightgreen;
-}
-
-.mars-title {
-	color: lightsalmon;
+footer {
+	background-color: #4a4a4a;
+	color: blanchedalmond;
+	text-align: center;
+	padding: 25px 0;
+	margin-bottom: 25px;
 }
