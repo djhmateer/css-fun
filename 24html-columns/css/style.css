@@ -1,7 +1,15 @@
+/* ========
+Global Styles
+======== */
+
 body {
 	margin: 0;
 	font-size: 21px;
 }
+
+/* ========
+Typography 
+======== */
 
 h1 {
 	font-size: 48px;
@@ -15,22 +23,36 @@ h3 {
 	font-size: 28px;
 }
 
+/* ========
+Layout 
+======== */
+
 header {
+	/* lighter blue */
 	background-color: #588C94;
 	color: white;
+	/* 30 top and bottom, 0 left and righ */
+	padding: 30px, 0;
 	text-align: center;
 }
-
+/* 
 .intro {
 	width: 500px;
 	margin: 0 auto;
-}
+} */
 
-.my-skills {
+	/* darker blue for my-skills */
+/* .my-skills {
 	background-color: #1D3C41;
 	color: white;
 }
 
 .columns {
 	width: 750px; 
+	display: flex;
 }
+
+.column {
+	margin:5px;
+
+} */
