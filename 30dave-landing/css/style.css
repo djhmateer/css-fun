@@ -1,0 +1,63 @@
+/* ========
+Global Styles
+======== */
+
+body {
+  margin: 0;
+  background-color: #121212;
+  font-size: 21px;
+}
+
+/* ========
+Typography 
+======== */
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+/* ========
+Layout 
+======== */
+
+header {
+  /* lighter blue */
+  background-color: #588c94;
+  color: white;
+  /* 30 top and bottom, 0 left and right */
+  padding: 30px 0;
+  text-align: center;
+}
+
+.intro {
+  width: 500px;
+  /* top and bottom is 100px and left and right are auto (ie centered) */
+  margin: 100px auto;
+  text-align: center;
+}
+
+/* darker blue for my-skills */
+.my-skills {
+  background-color: #1d3c41;
+  color: white;
+  /* 75 top and bottom, 0 left and righ */
+  padding: 75px 0px;
+  text-align: center;
+}
+
+.columns {
+  display: flex;
+}
+
+.column {
+	/* 0 top and bottom, 10 left and right */
+  margin: 0px 10px;
+}
