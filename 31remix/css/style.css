@@ -2,6 +2,10 @@
 Global Styles
 ======== */
 
+/* html, body {
+  height:100%;
+} */
+
 body {
   margin: 0;
   background-color: #121212;
@@ -67,9 +71,11 @@ a:hover {
   color: white;
 }
 
-/* end header */
+/* end HEADER Section */
 
-/* text */
+/* https://stackoverflow.com/questions/19026884/flexbox-center-horizontally-and-vertically */
+/* MAIN Text Section */
+
 .toptext {
   font-size: 32px;
   width: 590px;

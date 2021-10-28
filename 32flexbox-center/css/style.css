@@ -1,0 +1,41 @@
+/* html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+} */
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+
+
+  justify-content: center;
+  align-content: center;
+  align-items: center; /* horizontal */
+}
+
+.box div.A {
+  order: 1;
+  flex: 0 1 auto;
+  align-self: auto;
+  min-width: 0;
+  min-height: auto;
+}
+
+.box div.B {
+  order: 2;
+  flex: 0 1 auto;
+  align-self: auto;
+  min-width: 0;
+  min-height: auto;
+}
+
+C .box div.C {
+  order: 3;
+  flex: 0 1 auto;
+  align-self: auto;
+  min-width: 0;
+  min-height: auto;
+}
