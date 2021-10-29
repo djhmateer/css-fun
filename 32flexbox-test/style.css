@@ -1,0 +1,16 @@
+.container {
+	/* width: 750px;  */
+	/* width: 100%; */
+	/* display: flex; */
+	/* flex-direction: row;  */
+
+	/* left and right margins are auto - so centered */
+	margin: 0 auto;
+	/* need a max width for margin to work */
+	max-width: 590px;
+}
+
+.item {
+	margin:5px;
+}
+
