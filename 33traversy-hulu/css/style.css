@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap");
 
+/**
+ * Multi line comments
+ */
+
 /* BASE Style */
 /* universal selector */
 * {
@@ -57,7 +61,8 @@ h4 {
 .btn {
   /* as a butotn in block by default we need to style it like an inline */
   display: inline-block;
-  background: #fff;
+  /* background: #fff; */
+  background: #fffcfd;
   /* grey colour of text */
   color: #333;
   min-width: 135px;
