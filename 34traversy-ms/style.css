@@ -1,72 +1,269 @@
-
-
 /* BASE */
 
 * {
-	/* so padding doesn't affect width */
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  /* so padding doesn't affect width */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	background: #fff;
-	color: #000;
-	font-size: 15px;
-	line-height: 1.5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  color: #000;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
 a {
-	color: #262626;
-	/* no underlines */
-	text-decoration: none;
+  color: #262626;
+  /* no underlines */
+  text-decoration: none;
 }
 
 ul {
-	/* no bullets */
-	list-style: none;
+  /* no bullets */
+  list-style: none;
 }
 
 .container {
-	width: 90%;
-	max-width: 1100px;
-	margin:auto;
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
 }
 
 /* Nav */
-
-/* flexbox */
 .main-nav {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	height: 60px;
-	padding: 20px 0;
-	font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 20px 0;
+  font-size: 13px;
 }
 
 .main-nav .logo {
-	width: 110px;
+  width: 110px;
 }
 
+/* inner flex box */
 .main-nav ul {
-	display: flex;
+/* .main-nav .main-menu { */
+  display: flex;
 }
 
+/* separate between elements of menu */
 .main-nav ul li {
-	padding: 0 10px;
+  padding: 0 10px;
 }
 
+/* push underline down */
 .main-nav ul li a {
-	padding-bottom: 2px;
-
+  padding-bottom: 2px;
 }
+
+/* the underline */
 .main-nav ul li a:hover {
-	border-bottom: 2px solid #262626;
+  border-bottom: 2px solid #262626;
 }
 
 .main-nav ul.main-menu {
-	flex: 1;
-	margin-left: 20px;
+	/* push content to left hand side */
+  flex: 1;
+	/* push right a bit */
+  margin-left: 20px;
 }
+
+/* Utility */
+
+/* we're styling an a tag as a button */
+.btn {
+	cursor: pointer;
+	display: inline-block;
+	border: 0;
+	font-weight: bold;
+	padding: 10px 20px;
+	background: #262626;
+	color: #fff;
+	font-size: 15px;
+}
+
+.btn:hover {
+	opacity: 0.9;
+}
+
+/* carbon uses this */
+/* affects all text in h4 p a href */
+.dark {
+	color: #fff;
+}
+
+.dark btn {
+	background: #f4f4f4;
+	color: #333;
+}
+
+/* Showcase */
+.showcase {
+	width: 100%;
+	height: 400px;
+	background: url('https://i.ibb.co/zGSDGCL/slide1.png') no-repeat center center/cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: flex-end;
+	padding-bottom: 50px;
+	margin-bottom: 20px;
+}
+
+.showcase h2, .showcase p {
+	margin-bottom: 10px;
+}
+
+.showcase .btn {
+	margin-top: 20px;
+}
+
+/* home cards */
+/* CSS Grid */
+.home-cards {
+	display: grid;
+	/* fractions */
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	/* dont need to use margin in grid */
+	grid-gap: 20px;
+	margin-bottom: 40px;
+}
+
+/* to stop images going out of container */
+.home-cards img {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.home-cards h3 {
+	margin-bottom: 5px;
+}
+
+.home-cards a {
+	/* gives a bit more space and stops element being inline */
+	display: inline-block;
+	padding-top: 10px;
+
+	color: #0067b8;
+	text-transform: uppercase;
+	font-weight: bold;;
+}
+
+.home-cards a:hover i {
+	margin-left: 10px;
+}
+
+/* Xbox styling */
+.xbox {
+  width: 100%;
+  height: 350px;
+  background: url('https://i.ibb.co/tBJGPD9/xbox.png') no-repeat center center/cover;
+  margin-bottom: 20px;
+}
+
+.xbox .content {
+	width: 40%;
+	padding: 50px 0 0 30px;
+}
+
+.xbox p, .carbon p {
+	margin: 10px 0 20px;
+}
+
+/* Carbon */
+.carbon {
+  width: 100%;
+  height: 350px;
+  background: url('https://i.ibb.co/72cgtsz/carbon.jpg') no-repeat center center/cover;
+}
+
+.carbon .content {
+	width: 55%;
+	padding: 100px 30px;
+}
+
+/* Follow */
+.follow {
+	display: flex;
+	/* vertical */
+	align-items: center;
+	/* make sure it starts at the left */
+	justify-content: flex-start;
+	margin: 30px 0;
+}
+
+/* style every element in the follow to have a margin right */
+.follow * {
+	margin-right: 10px;
+}
+
+/* Links */
+.links {
+	background: #f2f2f2;
+	color: #616161;
+	font-size: 12px;
+	padding: 30px 0;
+}
+
+.links-inner {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 20px;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 10px;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.links li {
+	line-height: 2.8;
+}
+
+/* Footer */
+.footer {
+	background: #f2f2f2;
+	color: #616161;
+	font-size: 12px;
+	padding: 20px 0;
+}
+
+.footer-inner {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer div {
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.footer div i {
+	margin-right: 10px;
+}
+
+.footer ul {
+	display: flex;
+	/* so it wraps */
+	flex-wrap: wrap;
+}
+
+.footer li {
+	margin-right: 30px;
+	margin-bottom: 20px;
+}
+
+
+
