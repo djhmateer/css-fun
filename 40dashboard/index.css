@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* BASE Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* box-sizign like padding doesn't inhertic.. 
+so children wouldn't get this property. This forces it */
+/* * doesn't select pseudos */
+html * {
+	box-sizing: inherit;
+}
+
+body {
+  /* height: 100%; */
+  font-family: "Poppins";
+  background: #fff;
+  color: #000;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+a {
+  color: #262626;
+  /* no underlines */
+  text-decoration: none;
+}
+
+ul {
+  /* no bullets */
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/* Overall Container for whole screen  */
+.container{
+  padding: 20px 15px;
+}
+
+.welcome-title {
+  margin: 20px 0px;
+}
+
+/* GRID */
+
+.items{
+  display: grid;
+  grid-template-columns: minmax(50px, 2fr) minmax(50px,1fr);
+  gap: 15px;
+}
+
+.item {
+  height: 350px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+@media (max-width: 1000px) {
+  .items {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* @media (max-width: 950px) {
+  .title-container h1 {
+    display: none;
+  }
+  .links span {
+    display: none;
+  }
+  #sidebar {
+    width: 75px;
+  }
+  #main-dashboard-content {
+    margin-left: 75px;
+  }
+  .title-container {
+    padding: 20px;
+  } */
+}

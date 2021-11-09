@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+}
+
+/* box-sizign like padding doesn't inhertic.. 
+so children wouldn't get this property. This forces it */
+/* * doesn't select pseudos */
+html * {
+	box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+}
+
+.card {
+	border: 2px solid orange;
+	padding: 20px;
+
+	width: 600px;
+
+	display: grid;
+	/* grid-template-columns: 1fr 1fr; */
+	/* robust - will stop crazy content from affecting other columsn eg pre tag */
+	/* as small as its willing to be
+	   as large as its willing to be */
+	grid-template-columns: minmax(10px,1fr) minmax(10px,1fr);
+	gap: 2rem;
+}
+
+.card-image {
+	height: 300px;
+	background: orange;
+}
+
+
+.card-details {
+	display: flex;
+	flex-direction: column;
+}
+
+.card-buttons {
+	margin-top: auto;
+	display: flex;
+	/* the hoirzontal one */
+	justify-content: space-between;
+	/* same as margin-top: auto (in English) */
+	/* this puts pushed buttons down*/
+	/* margin-block-start: auto; */
+}
