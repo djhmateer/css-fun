@@ -447,7 +447,7 @@ section a {
 
 /* 1440px or more */
 @media (min-width: 1440px) {
-  /* Make boxes stop when get to 1440 */
+  /* Make background boxes stop when get to 1440 */
   .box {
     max-width: 1440px;
     margin-right: auto;

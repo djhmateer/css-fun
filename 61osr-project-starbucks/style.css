@@ -2,8 +2,21 @@
 
 /* Custom properties (variables) for colours */
 :root {
-  --color-primary: #006241;
-  --color-secondary: #d50032;
+  /* Starbucks green */
+  /* --color-primary: #006241; */
+
+  /* blue */
+  --color-primary: #3474e6;
+
+  /* light grey */
+  --color-light-grey: #f4f7fa;
+
+  /* red */
+  /* --color-secondary: #d50032; */
+
+  /* light grey as above */
+  --color-secondary: #f4f7fa;
+
   --color-extra: #d4e982;
 }
 
@@ -39,6 +52,14 @@ p {
   line-height: 1.7;
 }
 
+img {
+  max-width: 100%;
+}
+
+section a {
+  color: #000;
+}
+
 /* 3. Navbar */
 
 /* grey line goes all the way, thats why we need a -container div */
@@ -46,6 +67,7 @@ p {
   width: 100%;
   height: auto;
   background-color: #fff;
+  /* background-color: var(--color-light-grey); */
   padding: 20px;
   /* grey line at the bottom of entire navbar */
   box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%),
@@ -83,43 +105,32 @@ p {
 /* all items in lists ie li's in navbar */
 .navbar li {
   margin: 0 15px;
-	/* font-weight: bold; */
+  /* font-weight: bold; */
 }
 
 /* all hyperlinks in navbar */
 .navbar a {
-	color: #000;
-	text-decoration: none;
+  color: #000;
+  text-decoration: none;
 }
 
 .navbar a:hover {
-	color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 .navbar-nav-left {
-	/* shorthand for flex-basis, flex-grow, flex-shrink */
-	/* giving navbar-nav-left element more space */
-	flex:1;
-	margin-left: 20px;
+  /* shorthand for flex-basis, flex-grow, flex-shrink */
+  /* giving navbar-nav-left element more space */
+  flex: 1;
+  margin-left: 20px;
 }
 
-/* contact logo, sign in and join now */
-.navbar-nav-right img {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
+.navbar-nav-right li:nth-child(2) a {
+  color: var(--color-primary);
 }
-
-/* the hyperlink which contains an img and span */
-.navbar-nav-right li:first-child a {
-	display: flex;
-  /* Cross Axis ie vertical here */
-	align-items: center;
-}
-
-/* Register button decrease margin on left and right from 15 to 5px */
-.navbar-nav-right li:nth-child(2) {
-	margin: 0 5px;
+/* Try button decrease margin on left and right from 15 to 5px */
+.navbar-nav-right li:nth-child(3) {
+  margin: 0 5px;
 }
 
 /* 4. Buttons (site wide utility class)*/
@@ -128,8 +139,9 @@ p {
   cursor: pointer;
   display: inline-block;
   background: none;
-  border: 1px #000 solid;
-	/* rounded */
+  /* border: 1px #000 solid; */
+  border: 1px var(--color-primary) solid;
+  /* rounded */
   border-radius: 50px;
   padding: 7px 16px;
   line-height: 1.2;
@@ -139,8 +151,8 @@ p {
 
 /* White button with dark outline */
 .btn-dark-outline {
-	border-color: #000;
-	color: #000;
+  border-color: #000;
+  color: #000;
 }
 
 .btn-dark-outline:hover,
@@ -151,8 +163,9 @@ p {
 
 /* Black button with white text  */
 .btn-dark {
-	background-color: #000;
-	color: #fff;
+  /* background-color: #000; */
+  background-color: var(--color-primary);
+  color: #fff;
 }
 
 .btn-dark:hover {
@@ -160,14 +173,125 @@ p {
 }
 
 .btn-light-outline {
-	border-color: #fff;
-	color: #fff;
+  border-color: #fff;
+  color: #fff;
 }
 
+/* 
+ 	5. Sections / Boxes 
+*/
 
-/* 5. Sections / Boxes */
+.box {
+  margin-bottom: 30px;
+}
 
-/* Section Utility Classes */
+.box-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
 
+/* Grid Styles */
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+ /* Main Axis ie horizonal here (just like flex, don't really need)*/
+  justify-content: space-between;
+  /* Cross Axis ie vertical here (just like flex) */
+  align-items: center;
+}
 
-/* Footer */
+/* The first child is the image */
+.grid-reversed :first-child {
+	order: 2;
+
+}
+
+/* Section Utility Classes including: text-center, py-md, text-xl */
+/* like coding with Tailwind */
+
+/* Backgrounds Utility classes we can use around the site*/
+
+.bg-primary {
+  /* background-color: var(--color-primary); */
+  /* background-color: lightgray ; */
+  /* color: #000; */
+  /* background-color: var(--color-light-grey); */
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+  color: #000;
+}
+
+.bg-extra {
+  background-color: var(--color-extra);
+  color: #000;
+}
+
+/* Text Styling */
+.text-center {
+  text-align: center;
+}
+
+/* Text Sizes */
+
+.text-xl {
+  font-size: 30px;
+  /* letter-spacing: 1px; */
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.text-lg {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.text-md {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.text-sm {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Padding */
+.py-lg {
+  padding: 40px 0;
+}
+
+.py-md {
+  padding: 20px 0;
+}
+
+.py-sm {
+  padding: 10px 0;
+}
+
+/* 768 or less  */
+@media (max-width: 768px) {
+}
+
+/* 960 or less */
+@media (max-width: 960px) {
+  .text-xl {
+    font-size: 25px;
+  }
+}
+
+/* 1440 or more */
+@media (min-width: 1440px) {
+  /* Make background boxes stop when get to 1440 */
+  .box {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  /* .divider {
+    max-width: 90%;
+  } */
+}
