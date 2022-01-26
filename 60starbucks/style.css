@@ -116,76 +116,76 @@ section a {
 
 /* Footer and Social */
 .footer-container {
-	width: 100%;
-	max-width: 1440px;
-	margin: 0 auto;
-	padding:0 30px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
 .social {
-	display: flex;
-	/*  Cross Axis ie vertical */
-	align-items: center;
-	margin: 20px;
+  display: flex;
+  /*  Cross Axis ie vertical */
+  align-items: center;
+  margin: 20px;
 }
 
 .social img {
-	width: 35px;
-	height: 35px;
+  width: 35px;
+  height: 35px;
 }
 
 .social a {
-	text-decoration: none;
-	margin-right: 20px;
+  text-decoration: none;
+  margin-right: 20px;
 }
 
 .divider {
-	width: 95%;
-	height: 1px;
-	background-color: #ccc;
-	margin: 40px auto;
+  width: 95%;
+  height: 1px;
+  background-color: #ccc;
+  margin: 40px auto;
 }
 
 /* Box */
 .box {
-	margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 /* nice way to constrain whats in the box ie a box in a box */
 .box-inner {
-	max-width: 700px;
-	margin: 0 auto;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .box-text {
-	max-width: 500px;
-	text-align: center;
-	justify-self: center;
-	padding: 20px 20px;
-	margin:0 auto;
+  max-width: 500px;
+  text-align: center;
+  justify-self: center;
+  padding: 20px 20px;
+  margin: 0 auto;
 }
 
 .box-text .btn {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 
 .box-f .box-text {
-	max-width: 600px;
+  max-width: 600px;
 }
 
 /* Grid Styles */
 .grid-col-2 {
-	display: grid;
-	grid-template-columns: 1fr 1fr; 
-	gap: 2rem;
-	/* Main Axis just like flex */
-	justify-content: space-between;
-	/* Cross Axis - vertical */
-	align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  /* Main Axis just like flex */
+  justify-content: space-between;
+  /* Cross Axis - vertical */
+  align-items: center;
 }
 
-.grid-reversed :first-child{
- order: 2;
+.grid-reversed :first-child {
+  order: 2;
 }
 
 /* Buttons */
@@ -281,64 +281,180 @@ section a {
 
 /* Padding */
 .py-sm {
-	padding: 10px 0;
+  padding: 10px 0;
 }
 
 .py-md {
-	padding: 20px 0;
+  padding: 20px 0;
 }
 
 .py-lg {
-	padding: 40px 0;
+  padding: 40px 0;
+}
+
+/* Hamburger Menu Icon */
+
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  /* going to position things inside absolute */
+  position: relative;
+  background: none;
+  /* buttons have a border by default */
+  border: none;
+  /* alwyas be on top */
+  z-index: 10;
+  transition: all 0.25s;
+  /* don't want on large screens */
+  display: none;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: #000;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+/* goes from 3 lines to an X */
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+/* Mobile Menu */
+
+.mobile-menu {
+  position: fixed;
+  top: 85px;
+  right: 0;
+  background-color: #fff;
+  color: #000;
+  width: 90%;
+  height: 100%;
+  padding: 30px;
+  box-shadow: inset 0 4px 3px -3px rgb(0 0 0 / 10%),
+    inset 0 4px 2px -2px rgb(0 0 0 / 7%);
+  transition: all 0.3s;
+}
+
+.mobile-menu img {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.mobile-menu ul {
+  line-height: 3;
+  border-bottom: #777 solid 1px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.mobile-menu a:hover {
+  color: var(--color-primary);
+}
+
+.mobile-menu div {
+  margin-top: 20px;
+}
+
+.mobile-menu div a {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.hidden {
+  /* dont want display: none */
+  /* put it off screen so can slide back */
+  transform: translateX(100%);
+}
+
+/* as don't want to scroll when hamburger menu is there */
+.no-scroll {
+  overflow: hidden;
 }
 
 /* 960px or less */
-@media(max-width: 960px) {
-	.text-xl {
-		font-size: 30px;
-	}
+@media (max-width: 960px) {
+  .text-xl {
+    font-size: 30px;
+  }
 
-	.text-lg {
-		font-size: 25px
-	}
+  .text-lg {
+    font-size: 25px;
+  }
 }
+
 /* 768 or less  */
-@media(max-width: 768px) {
-	.grid-col-2 {
-		/* forcing it to be 1 column as want stacking */
-		grid-template-columns: 1fr;
-	}
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
 
-	.grid-reversed :first-child {
-		order: 0;
-	}
+  .grid-col-2 {
+    /* forcing it to be 1 column as want stacking */
+    grid-template-columns: 1fr;
+  }
 
-	.navbar-brand img {
-		width: 40px;
-		height: 40px;
-	}
+  .grid-reversed :first-child {
+    order: 0;
+  }
 
-	/* hide navbar */
-	.navbar .navbar-nav-left,
-	.navbar .navbar-nav-left {
-		display: none;
-	}
+  .navbar-brand img {
+    width: 40px;
+    height: 40px;
+  }
 
-	.footer {
-		text-align: center;
-	}
+  /* hide navbar */
+  .navbar .navbar-nav-left,
+  .navbar .navbar-nav-left {
+    display: none;
+  }
+
+  .footer {
+    text-align: center;
+  }
 }
 
 /* 1440px or more */
-@media(min-width: 1440px) {
-	/* Make boxes stop when get to 1440 */
-	.box {
-		max-width: 1440px;
-		margin-right: auto;
-		margin-left:auto;
-	}
+@media (min-width: 1440px) {
+  /* Make boxes stop when get to 1440 */
+  .box {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
-	.divider {
-		max-width: 90%;
-	}
+  .divider {
+    max-width: 90%;
+  }
 }
