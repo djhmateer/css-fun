@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+/* Custom properties (variables) for colours */
+:root {
+  --color-primary: #006241;
+  --color-secondary: #d50032;
+  --color-extra: #d4e982;
+}
+
+/* 1. Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Base Styles */
+
+/* font-sizes done in utility class */
+/* background done in each section? */
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.4;
+  color: #000;
+}
+
+/* All links black */
+a {
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  margin: 5px 0;
+  line-height: 1.7;
+}
+
+/* 3. Navbar */
+
+/* grey line goes all the way, thats why we need a -container div */
+.navbar {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  padding: 20px;
+  /* grey line at the bottom of entire navbar */
+  box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%),
+    0 0 2px rgb(0 0 0 / 7%);
+}
+
+.navbar-container {
+  /* Layout child elements horizontally */
+  display: flex;
+  /* Main Axis ie horizonal here */
+  justify-content: space-between;
+  /* Cross Axis ie vertical here */
+  align-items: center;
+
+  /* Don't want nav to go all the way left and right so will contain it after 1440 */
+  max-width: 1440px;
+  /* make it centered if >1440 */
+  margin: 0 auto;
+}
+
+/* osr4rights logo */
+.navbar-brand img {
+  width: 130px;
+  height: 50px;
+}
+
+/* all lists ie ul's in navbar */
+.navbar ul {
+  display: flex;
+  /* Cross Axis ie vertical here */
+  /* doesn't seem to need it todo test*/
+  align-items: center;
+}
+
+/* all items in lists ie li's in navbar */
+.navbar li {
+  margin: 0 15px;
+	/* font-weight: bold; */
+}
+
+/* all hyperlinks in navbar */
+.navbar a {
+	color: #000;
+	text-decoration: none;
+}
+
+.navbar a:hover {
+	color: var(--color-primary);
+}
+
+.navbar-nav-left {
+	/* shorthand for flex-basis, flex-grow, flex-shrink */
+	/* giving navbar-nav-left element more space */
+	flex:1;
+	margin-left: 20px;
+}
+
+/* contact logo, sign in and join now */
+.navbar-nav-right img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* the hyperlink which contains an img and span */
+.navbar-nav-right li:first-child a {
+	display: flex;
+  /* Cross Axis ie vertical here */
+	align-items: center;
+}
+
+/* Register button decrease margin on left and right from 15 to 5px */
+.navbar-nav-right li:nth-child(2) {
+	margin: 0 5px;
+}
+
+/* 4. Buttons (site wide utility class)*/
+/* first usage is in the navbar-nav-right */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  background: none;
+  border: 1px #000 solid;
+	/* rounded */
+  border-radius: 50px;
+  padding: 7px 16px;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* White button with dark outline */
+.btn-dark-outline {
+	border-color: #000;
+	color: #000;
+}
+
+.btn-dark-outline:hover,
+.btn-light-outline:hover {
+  /* Alpha transparency on button */
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+/* Black button with white text  */
+.btn-dark {
+	background-color: #000;
+	color: #fff;
+}
+
+.btn-dark:hover {
+  background-color: #333;
+}
+
+.btn-light-outline {
+	border-color: #fff;
+	color: #fff;
+}
+
+
+/* 5. Sections / Boxes */
+
+/* Section Utility Classes */
+
+
+/* Footer */
