@@ -1,0 +1,52 @@
+/* universal selector reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  background-color: #f4f4f4;;
+  /* Main axis */
+  /* justify-content: space-between; */
+  /* Cross axis */
+  /* align-items: center; */
+  /* flex-wrap: wrap; */
+}
+
+/* item class */
+.item {
+  /* Grow Shrink basis */
+  /* flex: 1 0 100px; */
+  /* Shorthand for above */
+  flex: 1;
+  /* width: 100px; */
+  /* flex-basis: 300px; */
+  height: 100px;
+  background: #254de4;;
+  color: #fff;
+  /* all around */
+  margin: 10px;
+
+  /* Centering the div */
+  display: flex;
+  /* Main axis */
+  justify-content: center;
+  /* Cross axis */
+  align-items: center;
+}
+
+/* pseudo selector */
+.item:nth-of-type(1) {
+}
+.item:nth-of-type(2) {
+  /* want this one bigger */
+  /* grows at a larger rate */
+}
+.item:nth-of-type(3) {
+}
