@@ -133,7 +133,9 @@ section a {
   margin: 0 5px;
 }
 
+/*  */
 /* 4. Buttons (site wide utility class)*/
+/*  */
 /* first usage is in the navbar-nav-right */
 .btn {
   cursor: pointer;
@@ -142,24 +144,23 @@ section a {
   /* border: 1px #000 solid; */
   border: 1px var(--color-primary) solid;
   /* rounded */
-  border-radius: 50px;
-  padding: 7px 16px;
+  border-radius: 05px;
+  padding: 9px 19px;
   line-height: 1.2;
   text-align: center;
   text-decoration: none;
 }
 
 /* White button with dark outline */
-.btn-dark-outline {
+/* .btn-dark-outline {
   border-color: #000;
   color: #000;
-}
+} */
 
-.btn-dark-outline:hover,
+/* .btn-dark-outline:hover,
 .btn-light-outline:hover {
-  /* Alpha transparency on button */
   background-color: rgba(0, 0, 0, 0.06);
-}
+} */
 
 /* Black button with white text  */
 .btn-dark {
@@ -169,13 +170,49 @@ section a {
 }
 
 .btn-dark:hover {
-  background-color: #333;
-}
-
-.btn-light-outline {
-  border-color: #fff;
+  /* background-color: #333; */
+  background-color: rgba(53,116,230, 0.7);
+  /* background-color: grey; */
   color: #fff;
 }
+
+/* .btn-light-outline {
+  border-color: #fff;
+  color: #fff;
+} */
+
+/* Footer */
+.footer-container {
+  width:100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding:0 30px 30px;
+}
+
+.social img{
+  width: 35px;
+  height: 35px;
+}
+
+.social a {
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.divider {
+  width: 95%;
+  height: 1px;
+  background-color: #ccc;
+  margin: 40px auto;
+}
+
+
 
 /* 
  	5. Sections / Boxes 
@@ -188,6 +225,30 @@ section a {
 .box-inner {
   max-width: 700px;
   margin: 0 auto;
+}
+
+.box-text {
+  max-width: 500px;
+  /* text-align: center; */
+  /* justify-self: center; */
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+.box-text btn {
+  margin-top: 20px;
+}
+
+
+.box-a img {
+  /* left align text */
+  /* text-align: start; */
+  /* max-width: 500px; */
+  margin-top: 50px;
+}
+
+.box-y .box-text {
+  max-width: 500px;
 }
 
 /* Grid Styles */
@@ -273,6 +334,28 @@ section a {
 
 /* 768 or less  */
 @media (max-width: 768px) {
+  .grid-col-2 {
+    grid-template-columns: 1fr;
+  }
+
+  /* the image is always first, so make sure it is on top rather than reversed */
+  .grid-reversed :first-child {
+    order: 0;
+  }
+
+  .navbar .navbar-nav-left,
+  .navbar .navbar-nav-right {
+    display: none;
+  }
+
+  .navbar-brand img {
+    /* height: 40px; */
+    /* width: 40px; */
+  }
+
+  .footer {
+    text-align: center;
+  }
 }
 
 /* 960 or less */
@@ -291,7 +374,7 @@ section a {
     margin-left: auto;
   }
 
-  /* .divider {
+  .divider {
     max-width: 90%;
-  } */
+  }
 }
