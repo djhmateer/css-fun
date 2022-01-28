@@ -5,12 +5,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 	<link rel="stylesheet" href="style.css">
 	<title>OSRR4RghtsTools</title>
 </head>
 
 <body>
-
 
 	<nav class="navbar">
 
@@ -33,7 +33,7 @@
 			<ul class="navbar-nav-right">
 				<li><a href="#">Contact</a></li>
 				<li><a href="#">Login</a></li>
-				<li><button class="btn btn-dark">Try for free</button></li>
+				<li><a href="#" class="btn btn-blue">Try for free</a></li>
 			</ul>
 
 			<!-- Hamburger Menu -->
@@ -47,7 +47,7 @@
 
 
 	<!-- Mobile Menu -->
-	<div class="mobile-menu hidden" id="mob-menu">
+	<div class="mobile-menu hidden" id="mobile-menu">
 		<ul>
 			<li><a href="#">Tools</a></li>
 			<li><a href="#">Case Studies</a></li>
@@ -56,7 +56,7 @@
 
 		<div class="mobile-menu-bottom">
 			<button class="btn btn-dark-outline">Login</button>
-			<button class="btn btn-dark">Try for free</button>
+			<button class="btn btn-blue">Try for free</button>
 			<!-- put in div so it goes down a line -->
 			<div>
 				<a href="#">
@@ -66,7 +66,6 @@
 			</div>
 		</div>
 	</div>
-
 
 
 
@@ -90,68 +89,77 @@
 		<!-- col 2 -->
 		<div>
 			<img src="img/box-f1.jpg" alt="">
+			<!-- <img src="img/Yvonne-230x300.jpg" alt=""> -->
 			<div class="bg-primary py-lg">
 				<div class="box-text">
 					<!-- <h2 class="text-xl">Try FaceSearch Detection</h2>
 					<p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi soluta ut fugit obcaecati assumenda, iusto pariatur, atque aperiam aliquam officia totam libero neque eligendi cum beatae animi. Velit, dolorum ipsa!</p> -->
-					<a href="#" class="btn btn-dark">Try for free</a>
+					<!-- <a href="#" class="btn btn-blue">Try for free</a> -->
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- 
-	<section class="box box-a bg-primary text-center py-md">
-		<div class="box-inner">
-			<h2 class="text-xl">Free Open Source Tools for Human Rights Investigators</h2>
-			<p class="text-md">Right here on this website - User friendly, secure (virtual machines deleted after you use them!), free computing to help human rights investigators</p>
 
-			<p>Funded by.., collaboration with Uni Swansea, Heriot Watt, Manchester, and UC Berkeley.</p>
-
-			<p>Thanks to Amnesty, Uni California Berkeley</p>
-			<a href="#">Learn more</a>
-		</div>
-	</section> -->
-
-	<!-- Box B - Hatespeech Detection, reversed -->
-	<!-- may be simpler to not have reversed and control from html order -->
-	<section class="box box-b bg-secondary grid-col-2">
-		<img src="img/box-b.png" alt="">
+	<!-- Box B - Hatespeech Detection -->
+	<section class="box box-b bg-grey grid-col-2">
+		<!-- <img src="img/box-b.png" alt=""> -->
 		<div class="box-text">
 			<h2 class="text-xl">Try Hatespeech Detection</h2>
-			<p class="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim provident laborum dolor odit eos pariatur beatae deserunt repudiandae ratione. Quidem perferendis iure excepturi earum amet, autem eos suscipit delectus debitis?</p>
-			<a href="#" class="btn btn-light-outline">Analyse Text</a>
-			<a href="#" class="btn btn-light-outline">Run Demo</a>
+			<form>
+
+				<div>
+					<!-- <label for="hateSpeech">Enter hatespeech:</label> -->
+				</div>
+				<input class="input" type="text" id="hateSpeech" placeholder="asdf" value="Some sample hate speech here to analyse">
+
+				<div class="py-md">
+					<button class="btn btn-blue">Analyse Text Above</button>
+				</div>
+				<div>
+					<a href="#" class="btn btn-light">Run Demos</a>
+				</div>
+
+			</form>
 		</div>
+
+		<div>
+			<p class="text-sm">We define "hate speech" as text that contains hateful, offensive and toxic language. </p>
+			<p class="text-sm"> We will produce a score (between 0 and 100) indicative of the extent of hate speech contained in the input text.</p>
+
+			<p>Languages currently supported by this tool are English, Arabic and Russian</p>
+		</div>
+
 	</section>
+
 
 	<!-- Box C - FaceSearch Detection, Image on Right -->
 	<section class="box box-c bg-primary grid-col-2 grid-reversed">
 		<img src="img/box-c.png" alt="">
 		<div class="box-text">
 			<h2 class="text-xl">Try FaceSearch Detection</h2>
-			<p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi soluta ut fugit obcaecati assumenda, iusto pariatur, atque aperiam aliquam officia totam libero neque eligendi cum beatae animi. Velit, dolorum ipsa!</p>
-			<a href="#" class="btn btn-dark">Run Demo</a>
+			<p class="text-sm">Looks for a target face which you give as an image, in many other images.</p>
+
+			<p>
+				This is designed as a first pass to help human rights investigators - let this tool process many images and narrow down the most likely ones for investigators to look at</p>
+
+			<div class="py-md">
+				<a href="#" class="btn btn-dark">Run Demos</a>
+			</div>
 		</div>
 	</section>
 
-	<!-- Box D - Thank you -->
-
-	<!-- Box E - Want a Demo? -->
-
-	<!-- Box F - Numbers -->
-
-	<!-- Box G - Get Started -->
-
-	<!-- Box y -->
+	<!-- Case Studies -->
 	<section class="box box-y grid-col-2">
 		<!-- col 1 -->
 		<div>
 			<img src="img/box-f1.jpg" alt="">
-			<div class="bg-extra py-lg">
+			<!-- <img src="img/Yvonne-230x300.jpg" alt=""> -->
+			<div class="py-lg">
 				<div class="box-text">
-					<h2 class="text-xl">Try FaceSearch Detection</h2>
-					<p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi soluta ut fugit obcaecati assumenda, iusto pariatur, atque aperiam aliquam officia totam libero neque eligendi cum beatae animi. Velit, dolorum ipsa!</p>
-					<a href="#" class="btn btn-dark">Run Demo</a>
+					<h2 class="text-xl">Case Study 1</h2>
+					<p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi excepturi qui perferendis voluptates doloribus veniam totam minima maiores neque suscipit alias amet voluptas atque eos, officia vitae magni, aut inventore.</p>
+					<!-- <p class="text-sm">yvonne@swanse.ac.uk</p> -->
+					<!-- <a href="#" class="btn btn-dark">Run Demo</a> -->
 				</div>
 			</div>
 		</div>
@@ -160,32 +168,162 @@
 			<img src="img/box-f2.jpg" alt="">
 			<div class="bg-primary py-lg">
 				<div class="box-text">
-					<h2 class="text-xl">Try FaceSearch Detection</h2>
-					<p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi soluta ut fugit obcaecati assumenda, iusto pariatur, atque aperiam aliquam officia totam libero neque eligendi cum beatae animi. Velit, dolorum ipsa!</p>
-					<a href="#" class="btn btn-dark">Run Demo</a>
+					<h2 class="text-xl">Case Study 2</h2>
+					<p class="text-sm"></p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed labore dolore laborum, quae veritatis odio doloribus vel quam ratione commodi ducimus, laboriosam sit rerum! Delectus voluptatibus illo nisi enim quia?
+					<!-- <a href="#" class="btn btn-blue">Try for free</a> -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Box F - Numbers -->
+	<section class="box box-x bg-grey text-center py-md">
+		<div class="box-inner">
+			<h2 class="text-md">Numbers</h2>
+			<p class="text-sm">> 100,000 Faces Analysed </p>
+			<p class="text-sm">> 250,000 Tweets Analysed </p>
+			<p class="text-sm">Many 100's of VM's setup and torn down securely on Microsoft Azure</p>
+
+
+			<a href="https://rightscon.org">rightscon.org</a>
+		</div>
+	</section>
+
+
+
+	<!-- Do you want a demo-->
+	<section class="box box-y grid-col-2">
+		<!-- col 1 -->
+		<div>
+			<!-- <img src="img/box-f1.jpg" alt=""> -->
+			<img src="img/Yvonne-230x300.jpg" alt="">
+			<div class="py-lg">
+				<div class="box-text">
+					<h2 class="text-xl">Do you want a Demo?</h2>
+					<p class="text-sm">Please get in touch and we can do an online demo of the tools.</p>
+					<p class="text-sm">yvonne@swansea.ac.uk</p>
+					<!-- <a href="#" class="btn btn-dark">Run Demo</a> -->
+				</div>
+			</div>
+		</div>
+		<!-- col 2 -->
+		<div>
+			<img src="img/box-f2.jpg" alt="">
+			<div class="bg-primary py-lg">
+				<div class="box-text">
+					<h2 class="text-xl">Get Started Now</h2>
+					<p class="text-sm">Try the demos on this page. Then press Try for free to register so you can try with your own images and text.</p>
+					<a href="#" class="btn btn-blue">Try for free</a>
 				</div>
 			</div>
 		</div>
 	</section>
 
 
-	<!-- Box unknown - raw centered text -->
-	<!-- maybe use for an information style message -->
-	<section class="box box-x bg-secondary text-center py-md">
+	<!-- See us at RighstCon -->
+	<section class="box box-x bg-grey text-center py-md">
 		<div class="box-inner">
-			<h2 class="text-md">See us at RightsCon 2022</h2>
-			<p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque odit ex quo, aliquid necessitatibus, dolore et iure distinctio reprehenderit itaque vel, aperiam dolor ratione enim veniam culpa delectus temporibus consectetur?</p>
+			<h2 class="text-md">See us presenting at RightsCon 2022</h2>
+			<p class="text-sm">RightsCon is the world’s leading summit on human rights in the digital age. The 11th edition of RightsCon will take place from Monday, June 6 to Friday, June 10, 2022 online and across all timezones.</p>
 
-			<a href="#">Learn more</a>
+			<a href="https://rightscon.org">rightscon.org</a>
+		</div>
+	</section>
+
+	<!-- Thank you to-->
+	<section class="box box-x text-center py-md">
+		<div class="box-inner">
+			<h2 class="text-md">Thank You To</h2>
+			<p class="text-sm">Our partners, sponsors and technology providers</p>
+			<ul>
+				<li>ESRC</li>
+				<li>University of Swansea</li>
+				<li>Heriot Watt University</li>
+				<li>Manchester University</li>
+				<li>Microsoft Azure</li>
+				<li>Amnesty International</li>
+			</ul>
+
+		</div>
+	</section>
+
+	<!-- Team and About Us -->
+	<section class="box box-x bg-grey text-center py-md">
+		<div class="box-inner">
+			<h2 class="text-md">Team and About Us</h2>
+			<p class="text-sm">Here are the team that have brought you OSR4RightsTools</p>
+
+		</div>
+	</section>
+
+
+	<!-- Links -->
+	<section class="links">
+		<div class="links-inner">
+			<ul>
+				<li>
+					<h3>OSRR4RghtsTools</h3>
+				</li>
+				<li><a href="#">Data Protection</a></li>
+				<li><a href="#">Terms of Use</a></li>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Conferences</a></li>
+				<li><a href="#">Sustainability</a></li>
+			</ul>
+			<ul>
+				<li>
+					<h3>Tools</h3>
+				</li>
+				<li><a href="#">Hatespeech Detection</a></li>
+				<li><a href="#">Face Search</a></li>
+				<li><a href="#">Face Search Video (coming soon)</a></li>
+			</ul>
+			<ul>
+				<li>
+					<h3>Resources</h3>
+				</li>
+				<li><a href="#">Case Studies</a></li>
+				<li><a href="#">Human Rights Information</a></li>
+				<li><a href="#">What can I do to help?</a></li>
+				<li><a href="#">What are human rights tools?</a></li>
+			</ul>
+			<ul>
+				<li>
+					<h3>Get Support</h3>
+				</li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Video Tutorials</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
 		</div>
 	</section>
 
 	<!-- Footer -->
-	<div class="divider"></div>
+	<!-- <footer class="footer">
+		<div class="footer-inner">
+			<ul>
+				<li><a href="#">Sitemap</a></li>
+				<li><a href="#">Contact Microsoft</a></li>
+				<li><a href="#">Privacy & cookies</a></li>
+				<li><a href="#">Terms of use</a></li>
+				<li><a href="#">Trademarks</a></li>
+				<li><a href="#">Safety & eco</a></li>
+				<li><a href="#">About our ads</a></li>
+				<li><a href="#">&copy; Microsoft 2020</a></li>
+			</ul>
+		</div>
+	</footer> -->
+
+
+	<!-- Footer -->
+	<!-- <div class="divider"></div> -->
 
 	<footer class="footer">
 		<div class="footer-container">
-			<div class="social">
+			<!-- <div class="social">
 				<a href="https://spotify.com">
 					<img src="./img/social-spotify.svg" alt="" />
 				</a>
@@ -204,8 +342,14 @@
 				<a href="https://twitter.com">
 					<img src="./img/social-twitter.svg" alt="" />
 				</a>
-			</div>
-			<p>© 2017 - 2022 OSR4Rights</p>
+			</div> -->
+			<!-- </p> -->
+			<ul>
+				<li><a href="#">&copy; 2017 - 2022 OSR4Rights</a></li>
+				<li><a href="#">GitHub Source</a></li>
+				<li><a href="#">Sitemap</a></li>
+				<li><a href="#">Hosted in the EU on Microsoft Azure</a></li>
+			</ul>
 		</div>
 	</footer>
 
