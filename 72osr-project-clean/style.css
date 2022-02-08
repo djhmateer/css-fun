@@ -188,21 +188,21 @@ img {
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
 
+
 /* 
  	4. Sections / Boxes 
 */
 
 .box {
+  /* media query constrains box to 1400 on large screen */
   /* padding: 0 20px; */
   margin: 0 20px;
   margin-bottom: 30px;
 }
 
-/* .box-inner {
-  max-width: 700px;
-  margin: 0 auto;
-} */
 
+
+/* Used in most boxes */
 .box-text {
   max-width: 500px;
   /* text-align: center; */
@@ -216,7 +216,6 @@ img {
 }
 
 /* Box A overrides */
-
 .box-a {
   padding: 10px;
 }
@@ -229,10 +228,9 @@ img {
 }
 
 /* as it is a grey background, push out this button to give more space */
-.box-b .btn-light {
-  margin-bottom: 20px;
-}
-
+/* .box-b .btn-light { */
+  /* margin-bottom: 20px; */
+/* } */
 
 /* case studies */
 .box-cs .box-text {
@@ -243,6 +241,11 @@ img {
   padding: 0 20px;
 }
 
+/* only used in Box Numbers */
+/* .box-inner {
+  max-width: 700px;
+  margin: 0 auto;
+} */
 
 /* Grid Styles */
 /* CSS Grid */
@@ -460,43 +463,11 @@ img {
 }
 
 /* Footer */
-/* lots of work to do */
-/* .footer {
-  color: #616161;
-  font-size: 14px;
+ .footer {
+  /* color: #616161; */
+  /* font-size: 14px; */
   padding: 20px 0;
 }
-
-.footer-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px 0 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.footer div {
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-}
-
-.footer div i {
-  margin-right: 10px;
-}
-
-.footer ul {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.footer li {
-  margin-right: 30px;
-  margin-bottom: 20px;
-} */
-
-
 
 .footer-container {
   width: 100%;
@@ -522,8 +493,8 @@ img {
   margin-bottom: 20px;
 }
 
-/* 
-.social img {
+
+/* .social img {
   width: 35px;
   height: 35px;
 }
