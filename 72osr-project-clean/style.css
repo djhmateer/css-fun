@@ -4,7 +4,7 @@
     1. Reset and Base Styles
  */
 
- /* font sizes handled in utility class eg text-sm */
+/* font sizes handled in utility class eg text-sm */
 
 :root {
   /* blue eg for buttons, hyperlink hover */
@@ -150,7 +150,7 @@ img {
   /* buttons need this (as opposed to a href) */
   /* eg Analyse Text Above in Hatespeech detection */
   font-size: 15px;
-  font-family:"Open Sans", sans-serif; 
+  font-family: "Open Sans", sans-serif;
 
   /* size: 26px; */
   /* margin: 10px 0; */
@@ -188,7 +188,6 @@ img {
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
 
-
 /* 
  	4. Sections / Boxes 
 */
@@ -199,8 +198,6 @@ img {
   margin: 0 20px;
   margin-bottom: 30px;
 }
-
-
 
 /* Used in most boxes */
 .box-text {
@@ -229,7 +226,7 @@ img {
 
 /* as it is a grey background, push out this button to give more space */
 /* .box-b .btn-light { */
-  /* margin-bottom: 20px; */
+/* margin-bottom: 20px; */
 /* } */
 
 /* case studies */
@@ -265,7 +262,6 @@ img {
 .grid-reversed :first-child {
   order: 2;
 }
-
 
 /* Section Utility Classes including: text-center, py-md, text-xl */
 /* like coding with Tailwind */
@@ -317,8 +313,6 @@ img {
 .py-sm {
   padding: 10px 0;
 }
-
-
 
 /*  
    Hamburger Menu 
@@ -436,11 +430,17 @@ img {
   overflow: hidden;
 }
 
+.box-thank-you-logos ul {
+  display: flex;
+  flex-wrap: wrap;
+  /* Main Axis */
+  justify-content: center;
+}
 
 /* 
-    Links Footer (from MS)
+    Bottom Links
  */
- .links {
+.links {
   /* background: #f2f2f2; */
   color: #616161;
   font-size: 14px;
@@ -463,22 +463,9 @@ img {
 }
 
 /* Footer */
- .footer {
-  /* color: #616161; */
-  /* font-size: 14px; */
+.footer {
   padding: 20px 0;
-}
-
-.footer-container {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 30px 30px;
-  font-size: 14px;
-
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between;  */
+  font-size: 15px;
 }
 
 .footer ul {
@@ -492,7 +479,6 @@ img {
   margin-right: 30px;
   margin-bottom: 20px;
 }
-
 
 /* .social img {
   width: 35px;
@@ -509,7 +495,6 @@ img {
   align-items: center;
   margin: 20px 0;
 } */
-
 
 /* 768 or less  */
 @media (max-width: 768px) {
