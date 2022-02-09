@@ -430,6 +430,11 @@ img {
   overflow: hidden;
 }
 
+.box-demo-started img {
+  /* align-self: center; */
+
+}
+
 .box-thank-you-logos ul {
   display: flex;
   flex-wrap: wrap;
