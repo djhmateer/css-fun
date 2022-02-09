@@ -30,7 +30,19 @@ body {
 
 /* All links black */
 a {
-  color: #000;
+  /* color: #000; */
+  color: #7a1ba6;
+  font-size: 15px;
+  /* text-decoration: underline;
+  text-decoration-line: underline;
+  text-decoration-thickness: initial;
+  text-decoration-style: initial;
+  text-decoration-color: initial; */
+}
+
+a:active, a:focus, a:hover {
+  color: #6e5cef;
+  text-decoration: none;
 }
 
 /* no dots or numbers when displaying an unordered list */
