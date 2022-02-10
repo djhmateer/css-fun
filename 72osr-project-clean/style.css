@@ -554,7 +554,24 @@ img {
 
   /* the image is always first, so make sure it is on top rather than reversed */
   .grid-reversed :first-child {
-    order: 0;
+    /* order: 0; */
+  }
+
+  /* put hero image on top */
+  .box-a :first-child {
+    order: 1;
+  }
+
+  /* .box-a .box-text h2 {
+    text-align: center;
+  }
+
+  .box-b .box-text h2 {
+    text-align: center;
+  } */
+
+ .box .box-text h2 {
+    text-align: center;
   }
 
   .navbar .navbar-nav-left,
@@ -562,9 +579,17 @@ img {
     display: none;
   }
 
-  .navbar-brand img {
+  .navbar-logo img {
     /* height: 40px; */
     /* width: 40px; */
+  }
+
+  .box-text {
+    padding: 5px 0px;
+  }
+
+  .box-b .input {
+    width: 95%; 
   }
 
   .footer {
